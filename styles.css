@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fefdf6;
+    text-align: center;
+}
+/*
+===============================
+------MAIN BLOCK ELEMENTS------
+===============================
+ */
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    height: auto;
+    padding: 10px 20px;
+    overflow: auto;
+}
+.container__row {
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.container__row::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.container__elem {
+    position: relative;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    float: left;
+    text-align: left;
+    color: #3d3d3d;
+}
+
+.elem-graph {
+    height: 320px;
+    width: 100%;
+}
+
+.elem_top {
+    padding: 10px;
+    background-color: #f8f8f8;
+    height: auto;
+    width: 650px;
+    border: 2px solid transparent;
+}
+
+.heading {
+    font-family: "Open Sans",sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.heading__text {
+    font: normal normal 14px/20px 'Roboto Medium', sans-serif;
+}
+
+.heading_top {
+    color: #eb4f47;
+}
+
+.text_top {
+    margin-top: 10px;
+}
+.text-block {
+    height: 300px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.elem_bottom {
+    position: absolute;
+    height: 100%;
+    width: 960px;
+    padding: 0;
+    background-color: #fefdf6;
+}
+.text_bottom {
+    border: 2px solid #eb4f47;
+    width: 100%;
+    padding: 10px 10px;
+}
+.heading_bottom {
+    color: #444;
+    padding: 0 10px;
+}
+.year_hidden {
+    visibility: hidden;
+}
+.year_visible {
+    visibility: visible;
+}
+.subheading_bottom {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+.subheading {
+    color: #49a2c7;
+    font: normal normal 700 13px/20px 'Open Sans Semibold', sans-serif;
+}
+
+span {
+    font: normal normal 700 13px/20px 'Open Sans Semibold', sans-serif;
+    color: #ee1c0d;
+}
+/*
+===============================
+-------MARKER,POINTS,SPAN------
+===============================
+ */
+.point {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    border-radius: 100%;
+}
+
+.point_regular {
+    background-color: transparent;
+}
+.point_regular:before {
+    content:"";
+    position:absolute;
+    top: 7px;
+    left: 7px;
+    width:4px;
+    height:4px;
+    border-radius: 100%;
+    background-color: #ddedf4;
+}
+
+.point_control {
+    background-color: #49a2c7;
+    z-index: 100;
+}
+.point_control:after {
+    content:" ";
+    position: absolute;
+    top: 18px;
+    left: 0;
+    width:18px;
+    height:5px;
+    z-index: 100;
+}
+
+.ship-mark {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    border-radius: 100%;
+    z-index: 100;
+    transition: transform 60ms ease 0s;
+    -webkit-transition: transform 60ms ease 0s;
+    -o-transition: transform 60ms ease 0s;
+    -moz-transition: transform 60ms ease 0s;
+}
+
+.ship-mark__box {
+    position: absolute;
+    margin-top: -45px;
+    margin-left: -21px;
+    width: 60px;
+    height: 40px;
+    z-index: 100;
+    text-align: center;
+}
+
+img {
+    height: 100%;
+}
+
+.year-flag {
+    position: absolute;
+    margin-top: 23px;
+    margin-left: -21px;
+    width: 60px;
+    height: 30px;
+    border-radius: 3px;
+    text-align: center;
+    letter-spacing: 2px;
+    font: normal normal 16px/30px 'Archivo Narrow', sans-serif;
+    background-color: #ccc5c5;
+    opacity: .8;
+    color: #262424;
+    z-index: 100;
+    transition: background-color,color,opacity;
+    user-select: none;
+}
+
+.point_control:hover {
+    cursor: pointer;
+    background-color: #eb4f47;
+    transition: background-color .15s ease 0s;
+    -webkit-transition: background-color .15s ease 0s;
+    -moz-transition: background-color .15s ease 0s;
+    -o-transition: background-color .15s ease 0s;
+}
+
+.point_control:hover >.year-flag {
+    cursor: pointer;
+    background-color: #161313;
+    color: #55c1cb;
+    transition: background-color,color .15s ease 0s;
+    -webkit-transition: background-color,color .15s ease 0s;
+    -moz-transition: background-color,color .15s ease 0s;
+    -o-transition: background-color,color .15s ease 0s;
+}
+
+/*
+===============================
+-------ANIMATION,EFFECTS-------
+===============================
+ */
+
+.pop-up_visible {
+    display: block;
+}
+
+.pop-up_hidden {
+    display: none;
+}
+
+
