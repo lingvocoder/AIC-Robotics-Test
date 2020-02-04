@@ -23,7 +23,7 @@ let shipOrigin = findShipMarkOrigin();
 let currentPos = shipOrigin;
 let targetPos = shipOrigin;
 let currentYear = 0;
-let prevYear = 0;
+let prevYear = 0;// this line is never used
 let current_zIndex = 1;
 
 function createPath() {
