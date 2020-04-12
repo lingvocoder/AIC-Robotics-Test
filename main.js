@@ -157,7 +157,7 @@ controlPointsArray.forEach( function ( point,index ) {
                 return;
             }
             moveShip( ( year > currentYear ) ? 1 : -1 );
-        },60)
+        },62)
     }
 });
 
