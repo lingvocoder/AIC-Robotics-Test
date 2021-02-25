@@ -171,9 +171,9 @@ span {
     border-radius: 100%;
     z-index: 100;
     transition: transform 60ms ease 0s;
-    -webkit-transition: transform 60ms ease 0s;
-    -o-transition: transform 60ms ease 0s;
-    -moz-transition: transform 60ms ease 0s;
+    -webkit-transition: transform 160ms linear 0s;
+    -o-transition: transform 160ms linear 0s;
+    -moz-transition: transform 160ms linear 0s;
 }
 
 .ship-mark__box {
@@ -212,9 +212,9 @@ img {
     cursor: pointer;
     background-color: #eb4f47;
     transition: background-color .15s ease 0s;
-    -webkit-transition: background-color .15s ease 0s;
-    -moz-transition: background-color .15s ease 0s;
-    -o-transition: background-color .15s ease 0s;
+    -webkit-transition: background-color .15s ease-in 0s;
+    -moz-transition: background-color .15s ease-in 0s;
+    -o-transition: background-color .15s ease-in 0s;
 }
 
 .point_control:hover >.year-flag {
@@ -222,9 +222,9 @@ img {
     background-color: #161313;
     color: #55c1cb;
     transition: background-color,color .15s ease 0s;
-    -webkit-transition: background-color,color .15s ease 0s;
-    -moz-transition: background-color,color .15s ease 0s;
-    -o-transition: background-color,color .15s ease 0s;
+    -webkit-transition: background-color,color .15s ease-in 0s;
+    -moz-transition: background-color,color .15s ease-in 0s;
+    -o-transition: background-color,color .15s ease-in 0s;
 }
 
 /*
